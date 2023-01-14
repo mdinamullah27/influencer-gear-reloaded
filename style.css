@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+  
+}
+.container{
+    width: 1188px;
+    height: 654px;
+   
+    margin: 0 auto;
+}
+.bbaner_section{
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 133px; */
+    display: flex;
+    gap: 133px;
+}
+
+.journey_info{
+    width: 582px;
+    height: 270px;
+    margin: auto 0;
+}
+.banner_heading{
+    font-size: 52px;
+    font-weight: 700;
+}
+.banner_peragraph{
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.banner_button{
+    background-color: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    border-radius: 41px;
+
+}
+.banner_button span{
+    padding-left: 10px;
+}
+.main_camera_img{
+    height: 475px;
+    width: 475px;
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+
+}
+
+/* logo section start  */
+
+
+.company_logos{
+    height: 110px;
+    width: 1110px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(7,1fr);
+    grid-column-gap: 61px;
+    border-top: 1px solid #C0CCDA;
+    border-bottom: 1px solid #C0CCDA;
+    padding: 0 50px;
+    margin-top: 100px;
+}
+.logo{
+    margin: auto 0;
+}
+
+/* popular_collectons */
+.popular_collectons{
+    width: 1047px;
+    height: auto;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    padding-bottom: 10px;
+    grid-row-gap: 30px;
+
+
+}
+
+.collection{
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.popular_all_collection h3{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.popular_collectons h4{
+    
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 16px ;
+}
+.collection_price{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 6px 0;
+
+}
+.fa-solid{
+    color: #FB8200;
+}
+.collection-peradraph .reting{
+    
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+.reting{
+    margin-left: 6px;
+}
+.collection-peradraph{
+    margin-top: 5px;
+}
+.see-more{
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    margin-right: 80px;
+    margin-top: 10px;
+
+}
+.see-more span{
+    margin-left: 10px;
+}
+
+
+/* feature section start */
+.features{
+    height: 270px;
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    gap: 96px;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    
+    
+   }
+    .feature-banner{
+        height: 270px;
+        height: 404px;
+       
+
+        /* background-image: url(./images/gear.png);
+        background-repeat: no-repeat; */
+      
+    }
+
+    .fertures-info h2{
+        font-size: 38px;
+        font-weight: 700;
+       
+
+    }
+    .fertures-info p{
+        font-size: 16px;
+        font-weight: 700px;
+        margin-top: 16px;
+        color: #6C6C6C;
+        margin-bottom: 16px;
+       
+    }
+    .join_now{
+        padding: 10px 24px;
+        background-color: #E02C6D;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FFFFFF;
+
+    }
+    .join_now span{
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FFFFFF;
+
+    }
+
+/* ---------
+meadia query 
+------------*/
+
+/* mobile divice */
+
+@media only screen and (max-width: 688px) {
+  
+    .container{
+        max-width: 80%;
+        margin: 0 auto;
+        
+    }
+    .bbaner_section{
+       
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        height: auto;
+    }
+    .main_camera_img{
+        height: auto;
+        width: 70%;
+        
+        background-position: center;
+        background-repeat: no-repeat;
+       
+    }
+    .journey_info{
+        width: 100%;
+        height: auto; 
+       
+    }
+
+    .company_logos{
+        grid-template-columns: repeat(4,1fr);
+        padding: 0;
+        border: none;
+        height: auto;
+        margin-top: 50px;
+        grid-column-gap: 10px;  
+        grid-row-gap: 10px;
+        width: 100%;    
+     
+    }
+    .res_iamge{
+        width: 80%;
+        height: auto;
+    }
+    .popular_collectons{
+        width: 95%;
+        height: auto;
+        margin: 0 auto; 
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        padding-bottom: 10px;
+        grid-row-gap: 30px;
+        align-items: center;
+        text-align: center;
+    
+    
+    }
+    .features{
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 100%;
+        height: auto;
+                  
+    }
+    .feature-banner img{
+        width: 100%;
+
+    }
+
+
+    
+}
+
+/* tablet divice */
+
+@media only screen and (min-width: 689px) and (max-width:992px){
+    .container{
+        width: 80%;
+        
+    }
+    .bbaner_section{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        
+    }
+
+    .popular_collectons{
+        width: 70%;
+        height: auto;
+        margin: 0 auto; 
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        padding-bottom: 10px;
+        grid-row-gap: 30px;
+        align-items: center;
+        text-align: center;
+    
+    
+    }
+ 
+
+    
+}
